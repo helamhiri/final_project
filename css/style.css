@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    box-sizing: border-box;
+    margin :0;
+    padding: 0;
+}
+#home{
+    position: relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: sans-serif,Arial, Helvetica ;
+    overflow-x: hidden;
+    
+
+}
+.retouche {
+    height: 400px;
+}
+.slogan{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+}
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 35vw;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 35vw;
+    overflow: hidden;
+}
+
+    .panel .content {
+        position: absolute;
+        width: 100vw;
+        min-height: 35vw;
+        color: #FFF;
+    }
+
+    .panel .description {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .panel img {
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.bottom {
+    background-color: rgb(44, 44, 44);
+    z-index: 1;
+}
+
+    .bottom .description {
+        right: 5%;
+    }
+
+.top {
+    background-color: #4d45ad;
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+    .top .description {
+        left: 5%;
+    }
+//design the textt
+.description h1{
+  
+}
+
+.description p{
+  text-align: justify;
+}
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+
+.space{
+    width: 1000px;
+}
+//about us 
+.section-title{} .section-subtitle{
+    margin-bottom: 7px;
+    padding-left: 7px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    border-left: 3px solid #FDAB00;
+    font-size: 700;
+    font-family: tahoma;
+}
+.section-main-title{
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 1.27;
+    font-weight: 300;
+}
+.section-main-title strong{
+    font-weight: 600;
+} 
+.about-box{
+-webkit-box-shadow: 0 0 0 10px #000000 inset;
+box-shadow: 0 0 0 10px #000000 inset;
+margin-right: 0;
+margin-top: 0;
+position: relative;
+display: block; 
+}
+.box-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 3;
+    transform: translateY(30px) translateX(-30px) ;
+    -webkit-transform: translateY(30px) translateX(-30px) ;
+}
+.about-box .videopopup img{
+     transform: translateY(30px) translateX(-30px) ;
+    -webkit-transform: translateY(30px) translateX(-30px) ;
+    width: 100%;
+    z-index: 1;
+}
+
+.about-box .videopopup{
+    position: relative;
+}
+
+.sonar-wrapper{
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+.about-pic{
+    margin-top: 35px;
+}
+
+
+
+.pff{
+    font-weight: normal;
+}
+.btnn{
+    border: 2px solid black;
+    border-radius: 0px;
+    background-color: none;
+    color: black;
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-white{
+    border-color: white;
+    color: white;
+}
+.btn-white:hover{
+    background-color: white;
+}
+
+.explain{
+    text-align: center;
+    font-size: 20px;
+}
+.services{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+.services-title{
+    font-family: 'tahoma';
+    letter-spacing: 1px;
+
+}
+.services-title:after{
+    content: '';
+    background: #FDAB00;
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    height: 3px; 
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: rgb(253, 171, 0);
+}
+.col-md-3:hover{
+    box-shadow: 1px -1px 9px 5px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.cat{
+    padding-top: 15px;
+    height: 500px;
+    
+
+}
+.col-md-3{
+    color: white;
+}
+.iconn{
+    font-size: 30px;
+    padding-bottom: 0px;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    color: rgb(253, 171, 0);
+    
+
+}
+.email-content{
+    margin-left:60px;
+    margin-top: -5px;
+}
+.form1 input,.form1 textarea{
+    padding: 10px;
+    margin:5px;
+    border: 1px solid rgb(253, 171, 0);
+    width: 350px;
+    font-family: sans-serif;
+    outline: 0;
+}
+.form1 textarea{
+    height: 120px;
+}
+.botton{
+    border: none;
+    background-color: rgb(253, 171, 0);
+    color: white;
+    box-shadow: 5px 7px 9px -3px rgba(0,0,0,0.45);
+}
+.botton:hover{
+    background-color: rgb(253, 150, 1);
+}
+.mesaages{
+    cursor: pointer;
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 430px;
+    height: 450px;
+  box-shadow: 5px 7px 20px -1px rgba(0,0,0,0.45);
+  margin-top: 60px;
+  margin-left: 80px;
+  position: relative;
+  background-color: white; 
+  
+}
+.footer{
+    background-color: rgb(253, 150, 0);
+    height: 200px;
+    margin-top: -105px;
+    
+    
+}
+
+#box{
+    height: 200px;
+    width: 80%;
+    background-color: #1F1253;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left:50%
+    transform: translate(-50%,-50%); 
+    
+    
+}
+#main{
+    height: 180%;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+ 
+    
+
+}
+#loginform,#signupform{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+#signupform{
+    top: 45%;
+    left: 75%;
+    visibility: hidden;
+}
+#loginform h1,#signupform h1{
+    font-family: arial;
+    font-size: 25px;
+    color: #1F1253;
+}
+#loginform input[type=password],
+#loginform input[type=email],
+#signupform input[type=password],
+#signupform input[type=email],
+#signupform input[type=text]{
+    height: 40px;
+    width: 300px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin: 5px;
+}
+#loginform input[type=submit],#signupform input[type=submit]{
+    height: 35px;
+    width: 130px;
+    background-color: #1F1253;
+    border: none;
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 175px;
+}
+#login-btn,#signup-btn{
+    height: 35px;
+    width: 120px;
+    background-color:transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    left: 75%;
+    top:65%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+}
+#signup-btn{
+    left: 25%;
+}
+#login-btn:hover,#signup-btn:hover{
+    background-color:white;
+    color:#2d2d2d;
+    cursor: pointer;
+}
+#login-msg,#signup-msg{
+    font-family: arial;
+    font-size: 25px;
+    color:white;
+    position: absolute;
+    top:35%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#signup-msg{
+    left: 25%;
+}
+#handyman{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+
+}
+.close{
+    margin-right: 10px;
+    margin-top: 5px;
+    color: white;
+    font-size: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#bootstrapForm{
+    margin: 0;
+    padding: 0;
+}
+
+.mainTitle{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+
+.btns{
+    width: 100%;
+    padding: 5px;
+    margin:5px;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-weight: bold;
+    background: none;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    justify-content: center;
+}
+.btns:hover{
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    background-color: #DF7401;
+   box-shadow: 5px 7px 20px -1px rgba(0,0,0,0.45);
+    }
+
+
+nav ul{
+    position: absolute;
+    right: 5%;
+    padding-right: 60px;
+
+}
+.navbar-brand{
+    margin-left: 65px;
+}
+.services p{
+    text-align: justify;
+}
+.text {
+  color:white;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;
+  
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+.flip {
+  height:50px;
+  overflow: hidden;
+}
+
+.flip > div > div {
+  color:#fff;
+  padding:3px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+.centered{
+text-align: center;
+ font-family:'Roboto';
+
+
+}
+
+.flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+.flip div div {
+  background:#7401DF;
+}
+.flip div:first-child div {
+  background:#DF7401;
+}
+.flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+.custom img{
+    width: 300px;
+    height: 200px;
+
+}
+.closer{
+    margin-right: -55px;
+}
+.custom img:hover{
+    
+box-shadow: 5px 7px 20px -1px rgba(0,0,0,0.45);
+}
+#brand-image{
+    margin-left: 100px;
+    padding: 0;
+
+}

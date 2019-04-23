@@ -1,0 +1,32 @@
+.opallocation-recent-location .item {
+	position: relative;
+}
+.entry-content-carousel {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #081033;
+	height: 100%;
+	padding: 20px 40px 10px;
+}
+.title {
+	margin-bottom: 20px;
+}
+.location-info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.location-info li {
+	margin: 0 0 10px;
+}
+.location-info .meta-label {
+	color: #fff;
+}
+.location-info i {
+	margin-right: 15px;
+}
+.opallocation-recent-location .item:hover .entry-content-carousel {
+	display: none;
+}
